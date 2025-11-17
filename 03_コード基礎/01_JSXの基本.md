@@ -1,9 +1,9 @@
 # JSXの基本
 Reactの拡張子は「.jsx」でJSX記法というReact特有の文法でJSを書くときに使う(TypeScriptは.tsx)
 
-- function コンポーネント名でreturnに出力したいコンポーネントを記述  
+- **function コンポーネント名でreturn**に出力したいコンポーネントを記述  
 ※ 複数行書きたい場合はreturn()でカッコ内に書くこと  
-- export default コンポーネント名でApp.jsxで呼び出せるようになる
+- **export default コンポーネント名**でApp.jsxで呼び出せるようになる
 ``` jsx
 function Button(){
 	return <button type="button">クリック</button>
@@ -20,7 +20,7 @@ function Button(){
 export default Button;
 ```
 jsxで記述した内容をApp.jsxで使うことができる  
-- import コンポーネント名 from 'パス'で読み込む
+- **import コンポーネント名 from 'パス'で**読み込む
 - 読み込んだコンポーネントがあたかもタグ化のように使える
 ``` jsx
 import './App.css'

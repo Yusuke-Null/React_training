@@ -34,3 +34,37 @@ function Button(props){
 
 export default Button;
 ```
+## children
+さらに**children**という特殊なPropsがあり、親で設定しなくても使える  
+これは親側のコンポーネント内で書いた要素やテキストを受け取るためのもの
+``` jsx
+import './App.css'
+import Button from './Button.jsx'
+
+function App() {
+  return (
+    <>
+      <b1>Hello World</b1>
+      <Button type="submit" disabled={false}>
+        ボタンクリック
+      </Button>
+    </>
+  )
+}
+
+export default App
+```
+{children}にはボタンクリックというテキストが渡される
+```jsx
+function Button(props){
+  const { type, disabled, children } = props;
+
+	return (
+		<button type={type} disabled={disabled}>
+			{children}
+		</button>
+	)
+}
+
+export default Button;
+```

@@ -84,6 +84,10 @@ export default Button;
 
 ### 複数コンポーネント間での状態管理
 Q. カウントを表示用のコンポーネントを作成する  
+1. 親コンポーネントがuseStateを持っている
+2. setCount(状態更新する関数)はButtonコンポーネントに渡す
+3. カウントの表示はDisplayコンポーネントに渡す
+
 Button.jsxではカウントするコンポーネントとする
 ``` jsx
 import { Children } from "react";

@@ -20,4 +20,5 @@ export default Button;
 ```
 
 HTMLを見るとクラス名が「button_xxx」のようなランダムな文字列に変換され、クラス名のバッティングを避けてくれる  
-実行時 > class="_button_12uqb_1"
+実行時に見たクラス名
+> class="_button_12uqb_1"

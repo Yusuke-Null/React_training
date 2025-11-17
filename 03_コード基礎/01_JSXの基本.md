@@ -57,6 +57,7 @@ export default Button;
 
 React仕様の注意点  
 - returnの中で複数のタグを書きたいときは空のフラグメント(<></>)で囲わないといけない(1つしかタグがないならいらない)
+空じゃなくHTMLの仕様に沿っていればdiv等でもOKで、決まってない場合は空を使っておく
 ``` jsx
 import './App.css'
 import Button from './Button.jsx'
@@ -67,6 +68,16 @@ function App() {
       <b1>Hello World</b1>
       <Button />
     </>
+  )
+}
+
+-- 下記でもOK
+function App() {
+  return (
+    <div>
+      <b1>Hello World</b1>
+      <Button />
+    </div>
   )
 }
 ```

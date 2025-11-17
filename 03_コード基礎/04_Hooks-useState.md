@@ -82,6 +82,9 @@ function Button(props){
 export default Button;
 ```
 
+**useStateはコンポーネント内だけで値が管理される**  
+-> リロードすると値はリセットされる
+
 ### 複数コンポーネント間での状態管理
 Q. カウントを表示用のコンポーネントを作成する  
 1. 親コンポーネントがuseStateを持っている
@@ -143,3 +146,4 @@ function App() {
 }
 
 export default App
+```

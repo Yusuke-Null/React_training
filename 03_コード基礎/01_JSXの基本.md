@@ -36,3 +36,21 @@ function App() {
 }
 
 export default App
+```
+
+JSと同様、関数を定義して発火させることもできる
+```jsx
+function Button(){
+	const handClick = () => {
+		alert('クリックされました');
+	}
+	return (
+		<button type="button" onClick={handClick}>
+			<icon>icon</icon>
+			<span>クリック</span>
+		</button>
+	)
+}
+
+export default Button;
+```

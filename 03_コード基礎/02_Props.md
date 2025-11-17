@@ -68,3 +68,40 @@ function Button(props){
 
 export default Button;
 ```
+
+親コンポーネントから関数も子コンポーネントへ渡すこともできる
+```jsx
+// APP.jsx
+import './App.css'
+import Button from './Button.jsx'
+
+function App() {
+
+  const handClick = () => {
+    console.log('クリックしました');
+  }
+
+  return (
+    <>
+      <h1>Hello World</h1>
+      <Button type="button" disabled={false} onClick={handClick}>
+        ボタンクリック
+      </Button>
+    </>
+  )
+}
+
+export default App
+
+// Button.jsx
+function Button(props){
+  const { type, disabled, children, onClick } = props;
+	return (
+		<button type={type} disabled={disabled} onClick={onClick}>
+			{children}
+		</button>
+	)
+}
+
+export default Button;
+```

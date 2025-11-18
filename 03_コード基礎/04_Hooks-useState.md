@@ -20,8 +20,8 @@ import styles from "./Button.module.css";
 import { useState } from "react";
 
 function Button(props){
-	const [count, setCount] = useState(0);
   // 手順2
+  const [count, setCount] = useState(0);
   const { type, disabled, children } = props;
   // 手順3
 	const handleClick = () => {
